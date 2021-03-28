@@ -1,1 +1,56 @@
 @import '~bootstrap/scss/bootstrap';
+
+// ////////////////////////////////////////////////// Colors & Fonts //////////
+
+$black: #000;
+$white: #fff;
+$red: #f00;
+$banner-green: #125807;
+$banner-link-green: #11ff0c;
+$heading-green: #04b700;
+
+.karla {
+  font-family: 'Karla', sans-serif;
+}
+
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+// ////////////////////////////////////////////////////////// Header //////////
+
+header {
+  align-items: center;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  color: $heading-green;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+
+// ///////////////////////////////////////////////////////// Content //////////
+
+.content {
+  display: flex;
+}
+
+// Banner Content //////////
+
+.banner {
+  background-color: $banner-green;
+  margin: 30px;
+  width: 25%;
+}
+
+// Story Content //////////
+
+.story {
+  border: 2px solid $red;
+  margin-right: 30px;
+  margin-top: 30px;
+  width: 75%;
+}
