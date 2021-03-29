@@ -8,6 +8,7 @@ $red: #f00;
 $banner-green: #125807;
 $banner-link-green: #11ff0c;
 $heading-green: #04b700;
+$article-grey: #e3e3e3;
 
 .karla {
   font-family: 'Karla', sans-serif;
@@ -29,6 +30,8 @@ header {
 .name {
   color: $heading-green;
   font-family: 'Karla', sans-serif;
+  font-size: 60px;
+  padding: 1%;
   text-align: center;
 }
 
@@ -38,19 +41,82 @@ header {
   display: flex;
 }
 
-// Banner Content //////////
+// ////////////////////////////////////////////////////////// Banner //////////
 
 .banner {
+  align-items: center;
   background-color: $banner-green;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   margin: 30px;
   width: 25%;
 }
 
-// Story Content //////////
+// intro //////////
+
+.image > img {
+  background-color: $article-grey;
+  border-radius: 200px;
+  height: 140px;
+  margin-top: 30px;
+  width: 140px;
+}
+
+.intro > p {
+  color: $white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+// banner links //////////
+
+.group {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+
+}
+
+.link {
+  color: $banner-link-green;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
+  margin: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.link:hover {
+  color: $banner-link-green;
+}
+
+// /////////////////////////////////////////////////////////// Story //////////
 
 .story {
-  border: 2px solid $red;
-  margin-right: 30px;
-  margin-top: 30px;
+  margin: 30px;
   width: 75%;
+}
+
+// article //////////
+
+h2 {
+  color: $heading-green;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  margin-right: 5%;
+  text-align: right;
+}
+
+article > p {
+  background-color: $article-grey;
+  border-radius: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  padding: 20px;
 }
