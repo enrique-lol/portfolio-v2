@@ -9,6 +9,7 @@ $banner-green: #125807;
 $banner-link-green: #11ff0c;
 $heading-green: #04b700;
 $article-grey: #e3e3e3;
+$waiv-olive: #828d80;
 
 .karla {
   font-family: 'Karla', sans-serif;
@@ -119,4 +120,56 @@ article > p {
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   padding: 20px;
+}
+
+.pseudo-textbox {
+  background-color: $article-grey;
+  border-radius: 10px;
+}
+
+.pseudo-textbox > p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  padding: 20px;
+}
+
+// modals //////////
+
+.modal-dialog {
+  width: 50%;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  width: 900px;
+}
+
+.nav-link {
+  color: $banner-green;
+}
+
+.nav-link:hover {
+  color: inherit;
+}
+
+.about {
+  background-color: $waiv-olive;
+  border-radius: 15px;
+  display: flex;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.fake-logo {
+  padding: 50px;
+  text-align: center;
+}
+
+.wt {
+  color: $white;
 }
