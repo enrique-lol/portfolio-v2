@@ -9,7 +9,18 @@ $banner-green: #125807;
 $banner-link-green: #11ff0c;
 $heading-green: #04b700;
 $article-grey: #e3e3e3;
+// brand colors
 $waiv-olive: #828d80;
+$nspire-v2olive: #3d5537;
+$nspire-v2oat: #ecead8;
+$mesh-green: #7bffc0;
+$mesh-purple: #230738;
+$nspire-v1green: #21a700;
+$nspire-v1oat: #fffcdd;
+$tttbc-light: #9887c8;
+$tttbc-dark: #161b37;
+$sprintly-light: #fff;
+$sprintly-dark: #272134;
 
 .kl {
   font-family: 'Karla', sans-serif;
@@ -129,12 +140,20 @@ article > p {
 .pseudo-textbox {
   background-color: $article-grey;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .pseudo-textbox > p {
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   padding: 20px;
+}
+
+.project-tabs {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 // modals //////////
@@ -195,9 +214,12 @@ article > p {
   color: inherit;
 }
 
+.tab {
+  margin-bottom: 30px;
+}
+
 .about {
   align-items: center;
-  background-color: $waiv-olive;
   border-radius: 15px;
   display: flex;
   font-family: 'Roboto Mono', monospace;
@@ -206,9 +228,40 @@ article > p {
   text-align: center;
 }
 
+
+// brand about
+.waiv-about {
+  background-color: $waiv-olive;
+  color: $white;
+}
+
+.nspire-v2about {
+  background-color: $nspire-v2olive;
+  color: $nspire-v2oat;
+}
+
+.mesh-about {
+  background-color: $mesh-purple;
+  color: $mesh-green;
+}
+
+.nspire-v1about {
+  background-color: $nspire-v1oat;
+  color: $nspire-v1green;
+}
+
+.tttbc-about {
+  background-color: $tttbc-dark;
+  color: $tttbc-light;
+}
+
+.sprintly-about {
+  background-color: $sprintly-dark;
+  color: $sprintly-light;
+}
+
 .fake-logo {
-  padding: 50px;
-  text-align: center;
+  margin: 0;
 }
 
 .tab-content {
