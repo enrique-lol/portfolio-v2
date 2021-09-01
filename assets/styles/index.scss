@@ -1,0 +1,380 @@
+@import '~bootstrap/scss/bootstrap';
+
+// ////////////////////////////////////////////////// Colors & Fonts //////////
+
+$black: #000;
+$white: #fff;
+$red: #f00;
+$banner-green: #125807;
+$banner-link-green: #11ff0c;
+$heading-green: #04b700;
+$article-grey: #e3e3e3;
+// brand colors
+$waiv-olive: #828d80;
+$nspire-v2olive: #3d5537;
+$nspire-v2oat: #ecead8;
+$mesh-green: #7bffc0;
+$mesh-purple: #230738;
+$nspire-v1green: #21a700;
+$nspire-v1oat: #fffcdd;
+$tttbc-light: #9887c8;
+$tttbc-dark: #161b37;
+$sprintly-light: #fff;
+$sprintly-dark: #272134;
+$aceso-light: #fff;
+$aceso-dark: #2870ac;
+
+.kl {
+  font-family: 'Karla', sans-serif;
+}
+
+.rm {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.wt {
+  color: $white;
+}
+
+// ////////////////////////////////////////////////////////// Header //////////
+
+header {
+  align-items: center;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  color: $heading-green;
+  font-family: 'Karla', sans-serif;
+  font-size: 60px;
+  padding: 1%;
+  text-align: center;
+}
+
+// ///////////////////////////////////////////////////////// Content //////////
+
+.content {
+  display: flex;
+}
+
+// ////////////////////////////////////////////////////////// Banner //////////
+
+.banner {
+  background-color: $banner-green;
+  border-radius: 20px;
+}
+
+.desktop-banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  margin-right: 0;
+  width: 25%;
+}
+
+// intro //////////
+
+.headshot {
+  background-color: $article-grey;
+  border-radius: 200px;
+  height: 140px;
+  margin-top: 30px;
+  width: 140px;
+}
+
+.intro > p {
+  color: $white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+// banner links //////////
+
+.group {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+
+}
+
+.link {
+  color: $banner-link-green;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
+  margin: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.link:hover {
+  color: $banner-link-green;
+}
+
+// banner trivia //////////
+
+.bannerTrivia {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+
+.bannerTrivia > article > p {
+  background-color: none;
+  color: $white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+}
+
+.bannerTrivia > article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+// /////////////////////////////////////////////////////////// Story //////////
+
+.story {
+  margin: 30px;
+  margin-bottom: 8px;
+  width: 75%;
+}
+
+// article //////////
+
+h2 {
+  color: $heading-green;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  margin-right: 5%;
+  text-align: right;
+}
+
+.story > article > p {
+  background-color: $article-grey;
+  border-radius: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.linkedList > li > p {
+  border-radius: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  padding: 0px;
+}
+
+.pseudo-textbox {
+  background-color: $article-grey;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.pseudo-textbox > p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.project-tabs {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+// modals //////////
+
+.modal-dialog {
+  width: 50%;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  width: 900px;
+}
+
+.modal-link {
+  color: $heading-green;
+  text-decoration: underline;
+}
+
+.modal-link:hover {
+  color: inherit;
+}
+
+.modal-foot {
+  align-items: center;
+  border-top: 1px solid $article-grey;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.footer-links {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.exit {
+  margin: 0;
+  padding: 0;
+}
+
+.em {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: $banner-green;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.nav-link:hover {
+  color: inherit;
+}
+
+.tab {
+  margin-bottom: 30px;
+}
+
+.about {
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  font-family: 'Roboto Mono', monospace;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+
+// brand about
+.waiv-about {
+  background-color: $waiv-olive;
+  color: $white;
+}
+
+.nspire-v2about {
+  background-color: $nspire-v2olive;
+  color: $nspire-v2oat;
+}
+
+.mesh-about {
+  background-color: $mesh-purple;
+  color: $mesh-green;
+}
+
+.nspire-v1about {
+  background-color: $nspire-v1oat;
+  color: $nspire-v1green;
+}
+
+.tttbc-about {
+  background-color: $tttbc-dark;
+  color: $tttbc-light;
+}
+
+.sprintly-about {
+  background-color: $sprintly-dark;
+  color: $sprintly-light;
+}
+
+.aceso-about {
+  background-color: $aceso-dark;
+  color: $sprintly-light;
+}
+
+.fake-logo {
+  margin: 0;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.tab-content > li {
+  line-height: 1.2;
+}
+
+.screenshot {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+// //////////////////////////////////////////// Footer
+
+footer {
+  align-items: center;
+  background-color: $black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+}
+
+footer > .group {
+  width: auto;
+}
+
+.signature {
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 300px;
+}
+
+// /////////////////////////////////////// Media Queries
+
+@media (min-width: 851px) {
+  .mobile-banner {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .desktop-banner {
+    display: none;
+  }
+
+  .story {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  // .mobile-banner {
+  //   display: auto;
+  // }
+}
+
+@media (max-width: 980px) {
+  .job-title {
+    display: none;
+  }
+
+  .fake-logo {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
